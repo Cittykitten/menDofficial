@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | menD Garage</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <!-- Header (Consistent with Other Pages) -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><span>menD</span> Garage</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <a href="contact.html" class="cta-button">Book Appointment</a>
+        </div>
+    </header>
+
+    <!-- Gallery Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Work Gallery</h1>
+            <p>See the transformation we deliver for every vehicle.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="performance">Performance Builds</button>
+                <button class="filter-btn" data-filter="restoration">Restorations</button>
+                <button class="filter-btn" data-filter="maintenance">Maintenance</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid-section">
+        <div class="container">
+            <div class="gallery-container">
+                <!-- Performance Builds -->
+                <a href="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                   data-lightbox="gallery" 
+                   data-title="Turbocharged BMW M4" 
+                   class="gallery-item performance">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="BMW M4">
+                    <div class="gallery-overlay">
+                        <h3>Turbocharged BMW M4</h3>
+                        <p>+150HP Gain</p>
+                    </div>
+                </a>
+
+                <!-- Restorations -->
+                <a href="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                   data-lightbox="gallery" 
+                   data-title="1967 Mustang Restoration" 
+                   class="gallery-item restoration">
+                    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Classic Mustang">
+                    <div class="gallery-overlay">
+                        <h3>1967 Mustang Restoration</h3>
+                        <p>Frame-off Restoration</p>
+                    </div>
+                </a>
+
+                <!-- Maintenance -->
+                <a href="https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                   data-lightbox="gallery" 
+                   data-title="Full Brake System Overhaul" 
+                   class="gallery-item maintenance">
+                    <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Brake Service">
+                    <div class="gallery-overlay">
+                        <h3>Full Brake System Overhaul</h3>
+                        <p>Porsche 911</p>
+                    </div>
+                </a>
+
+                <!-- Add more gallery items (6-12 total recommended) -->
+                <a href="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                   data-lightbox="gallery" 
+                   data-title="Engine Bay Detailing" 
+                   class="gallery-item maintenance">
+                    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Engine Bay">
+                    <div class="gallery-overlay">
+                        <h3>Engine Bay Detailing</h3>
+                        <p>Show-Quality Finish</p>
+                    </div>
+                </a>
+
+                <a href="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                   data-lightbox="gallery" 
+                   data-title="Custom Exhaust Fabrication" 
+                   class="gallery-item performance">
+                    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Exhaust Work">
+                    <div class="gallery-overlay">
+                        <h3>Custom Exhaust Fabrication</h3>
+                        <p>Stainless Steel</p>
+                    </div>
+                </a>
+
+                <a href="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                   data-lightbox="gallery" 
+                   data-title="Vintage Corvette Paint Correction" 
+                   class="gallery-item restoration">
+                    <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Corvette">
+                    <div class="gallery-overlay">
+                        <h3>Vintage Corvette Paint Correction</h3>
+                        <p>Mirror Finish</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Want This Level of Craftsmanship?</h2>
+            <p>Bring your project to the experts at menD Garage.</p>
+            <div class="cta-buttons">
+                <a href="tel:+1234567890" class="btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+                <a href="contact.html" class="btn-secondary">Get a Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html"><span>menD</span> Garage</a>
+                    <p>Precision auto care for enthusiasts.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Garage St, Auto City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> contact@mendgarage.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 menD Garage. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Gallery Filter Functionality
+        $(document).ready(function(){
+            $('.filter-btn').click(function(){
+                const filter = $(this).data('filter');
+                $('.filter-btn').removeClass('active');
+                $(this).addClass('active');
+                
+                if (filter === 'all') {
+                    $('.gallery-item').fadeIn(300);
+                } else {
+                    $('.gallery-item').hide();
+                    $(`.gallery-item.${filter}`).fadeIn(300);
+                }
+            });
+
+            // Lightbox configuration
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'albumLabel': 'Project %1 of %2'
+            });
+        });
+    </script>
+</body>
+</html>
