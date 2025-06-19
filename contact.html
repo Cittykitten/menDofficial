@@ -155,8 +155,62 @@
         </div>
     </section>
 
+
+
+
+
+
+     <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">What services do you offer at menD Garage?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>We offer a comprehensive range of automotive services including performance upgrades, complete vehicle restorations, routine maintenance, custom fabrication work, and diagnostic services. Our team specializes in both modern and classic vehicles, providing tailored solutions for each client's needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How do I schedule an appointment?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>You can schedule an appointment by calling us directly at (+233) 246 229 036, using the contact form on this page, or visiting our garage during business hours. For complex projects, we recommend scheduling a consultation first so we can properly assess your vehicle's needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What are your business hours?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>We're open Monday through Friday from 8:00 AM to 6:00 PM, and Saturdays from 9:00 AM to 3:00 PM. We're closed on Sundays and public holidays. For emergency services after hours, please call our emergency line at the same number.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you provide warranty on your services?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Yes, we stand behind all our work with a 12-month/12,000-mile warranty on most services. Performance parts and custom work come with manufacturer warranties that we'll explain in detail before starting your project. All warranty terms will be clearly outlined in your service agreement.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How do your pricing and estimates work?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>We provide free initial estimates after evaluating your vehicle. For complex projects, we may charge a diagnostic fee that gets applied to your final bill if you proceed with the work. Our pricing is transparent - you'll receive a detailed breakdown of all parts and labor costs before any work begins.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I bring my own parts?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>While we prefer to source parts ourselves to ensure quality and compatibility, we will install customer-provided parts in most cases. However, please note that warranty coverage may be limited for customer-supplied parts. All parts must be new and in original packaging with receipts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+
     <!-- FAQ Section -->
-    <section class="faq-section">
+<!--     <section class="faq-section">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-container">
@@ -186,7 +240,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer>
@@ -241,6 +295,31 @@
                 $('.faq-question').not(this).removeClass('active');
                 $('.faq-question').not(this).next('.faq-answer').slideUp(200);
                 $('.faq-question').not(this).find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            });
+            
+            // Form submission handling
+            $('#contactForm').submit(function(e){
+                e.preventDefault();
+                // Here you would typically send the form data to your server
+                alert('Thank you for your message! We will contact you shortly.');
+                this.reset();
+            });
+        });
+
+
+          // FAQ Accordion
+        $(document).ready(function(){
+            $('.faq-question').click(function(){
+                $(this).toggleClass('active');
+                $(this).next('.faq-answer').slideToggle(200);
+                $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
+                
+                // Close other open items except the first one
+                if (!$(this).parent().is(':first-child')) {
+                    $('.faq-question').not(this).removeClass('active');
+                    $('.faq-question').not(this).next('.faq-answer').slideUp(200);
+                    $('.faq-question').not(this).find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+                }
             });
             
             // Form submission handling
