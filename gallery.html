@@ -8,6 +8,67 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Lightbox CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <style>
+        /* Add this CSS for the mobile menu */
+        .nav-links {
+            display: flex;
+            transition: all 0.3s ease;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: #333;
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem 0;
+                z-index: 1000;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 1rem 0;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .cta-button.desktop {
+                display: none;
+            }
+            
+            .cta-button.mobile {
+                display: block;
+                margin: 1rem auto;
+                width: 80%;
+                text-align: center;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            .cta-button.mobile {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,15 +83,17 @@
                     <li><a href="gallery.html" class="active">Gallery</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li class="mobile-only"><a href="contact.html" class="cta-button mobile">Book Appointment</a></li>
                 </ul>
                 <div class="hamburger">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
-            <a href="contact.html" class="cta-button">Book Appointment</a>
+            <a href="contact.html" class="cta-button desktop">Book Appointment</a>
         </div>
     </header>
 
+    <!-- Rest of your HTML content remains the same -->
     <!-- Gallery Hero -->
     <section class="page-hero">
         <div class="container">
@@ -181,8 +244,23 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-    <script src="script.js"></script>
     <script>
+        // Mobile menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.querySelector('i').classList.toggle('fa-bars');
+            this.querySelector('i').classList.toggle('fa-times');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+                document.querySelector('.hamburger i').classList.remove('fa-times');
+                document.querySelector('.hamburger i').classList.add('fa-bars');
+            });
+        });
+
         // Gallery Filter Functionality
         $(document).ready(function(){
             $('.filter-btn').click(function(){
