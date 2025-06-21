@@ -434,6 +434,26 @@ header .container {
     justify-content: center;
 }
 
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+    text-align: center; /* Added this line */
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Added this line */
+}
+
+.social-icons {
+    justify-content: center; /* Added this line */
+}
+
 /* Footer Styles */
 footer {
     background-color: var(--dark-color);
