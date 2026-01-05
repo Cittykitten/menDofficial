@@ -15,7 +15,7 @@
             // Form submission handling
             $('#contactForm').submit(function(e){
                 e.preventDefault();
-                // Here you would typically send the form data to the server
+                // sent the form data to the server
                 alert('Thank you for your message! We will contact you shortly.');
                 this.reset();
             });
