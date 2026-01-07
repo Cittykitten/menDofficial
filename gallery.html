@@ -8,66 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Lightbox CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-    <style>
-        .nav-links {
-            display: flex;
-            transition: all 0.3s ease;
-        }
-        
-        .hamburger {
-            display: none;
-            cursor: pointer;
-            font-size: 1.5rem;
-        }
-        
-        .cta-button {
-            transition: all 0.3s ease;
-        }
-        
-        @media (max-width: 768px) {
-            .nav-links {
-                position: fixed;
-                top: 80px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 80px);
-                background: #333;
-                flex-direction: column;
-                align-items: center;
-                padding: 2rem 0;
-                z-index: 1000;
-            }
-            
-            .nav-links.active {
-                left: 0;
-            }
-            
-            .nav-links li {
-                margin: 1rem 0;
-            }
-            
-            .hamburger {
-                display: block;
-            }
-            
-            .cta-button.desktop {
-                display: none;
-            }
-            
-            .cta-button.mobile {
-                display: block;
-                margin: 1rem auto;
-                width: 80%;
-                text-align: center;
-            }
-        }
-        
-        @media (min-width: 769px) {
-            .cta-button.mobile {
-                display: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <header>
@@ -246,3 +187,4 @@
     <script>
 </body>
 </html>
+
