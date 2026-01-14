@@ -1,6 +1,4 @@
-
-
-        /* Global Styles */
+ /* Global Styles */
         :root {
             --primary-color: #333;
             --secondary-color: #ff5e14; /* Orange accent */
@@ -484,3 +482,4 @@
                 justify-content: center;
             }
         }
+
