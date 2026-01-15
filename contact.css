@@ -163,8 +163,8 @@ header .container {
 .page-hero {
      background:
      linear-gradient(
-     rgba(29, 53, 87, 0.9),
-     rgba(29, 53, 87, 0.7)
+     rgba(#222),
+     rgba(#222)
   ),
   url("images/joel-timothy-HRZbwSaMZB8-unsplash.jpg") center / cover no-repeat;
 
@@ -618,6 +618,7 @@ footer {
         font-size: 2rem;
     }
 }
+
 
 
 
