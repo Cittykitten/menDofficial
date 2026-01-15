@@ -161,7 +161,7 @@ header .container {
 
 /* Page Hero */
 .page-hero {
-     background: url("images/joel-timothy-HRZbwSaMZB8-unsplash.jpg") center / cover no-repeat;
+     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url("images/joel-timothy-HRZbwSaMZB8-unsplash.jpg") center / cover no-repeat;
 
     color: white;
     text-align: center;
@@ -613,6 +613,7 @@ footer {
         font-size: 2rem;
     }
 }
+
 
 
 
