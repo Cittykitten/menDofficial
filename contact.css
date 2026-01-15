@@ -1,16 +1,13 @@
-
+ /* Global Styles */
 :root {
-    --primary-color: #e63946;
-    --secondary-color: #1d3557;
-    --accent-color: #457b9d;
-    --light-color: #f1faee;
-    --dark-color: #1a1a1a;
-    --gray-color: #6c757d;
-    --light-gray: #f8f9fa;
-    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
-}
-
+     --primary-color: #333;
+     --secondary-color: #ff5e14; /* Orange accent */
+     --accent-color: #ff5e14;
+     --light-color: #f4f4f4;
+     --dark-color: #222;
+     --text-light: #777;
+     --white: #fff;
+ }
 * {
     margin: 0;
     padding: 0;
@@ -616,3 +613,4 @@ footer {
         font-size: 2rem;
     }
 }
+
