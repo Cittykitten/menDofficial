@@ -1,13 +1,5 @@
  /* Global Styles */
-:root {
-     --primary-color: #333;
-     --secondary-color: #ff5e14; /* Orange accent */
-     --accent-color: #ff5e14;
-     --light-color: #f4f4f4;
-     --dark-color: #222;
-     --text-light: #777;
-     --white: #fff;
- }
+
 * {
     margin: 0;
     padding: 0;
@@ -613,6 +605,7 @@ footer {
         font-size: 2rem;
     }
 }
+
 
 
 
